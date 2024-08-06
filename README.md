@@ -1,12 +1,13 @@
-
 # Project Documentation
+
+this is the second changes
 
 ## Getting Started
 
-If you have just downloaded this repo, then the first thing you need to do is 
+If you have just downloaded this repo, then the first thing you need to do is
 
 '''bash
-npm install 
+npm install
 '''
 
 First, run the development server:
@@ -25,7 +26,7 @@ This API allows for managing a list of people, supporting operations to retrieve
 
 ### Prisma Schema
 
-The Prisma schema for this project defines the structure of the data related to `Person`. You can find the schema in the `prisma/schema.prisma` file. 
+The Prisma schema for this project defines the structure of the data related to `Person`. You can find the schema in the `prisma/schema.prisma` file.
 
 The `Person` model typically looks like this:
 
@@ -72,18 +73,18 @@ No payload is required. Simply send a GET request to `/api/people`.
 
 ```json
 [
-    {
-        "id": 1,
-        "firstname": "John",
-        "lastname": "Doe",
-        "phone": "123-456-7890"
-    },
-    {
-        "id": 2,
-        "firstname": "Jane",
-        "lastname": "Doe",
-        "phone": "098-765-4321"
-    }
+  {
+    "id": 1,
+    "firstname": "John",
+    "lastname": "Doe",
+    "phone": "123-456-7890"
+  },
+  {
+    "id": 2,
+    "firstname": "Jane",
+    "lastname": "Doe",
+    "phone": "098-765-4321"
+  }
 ]
 ```
 
@@ -95,9 +96,9 @@ Adds a new person to the database.
 
 ```json
 {
-    "firstname": "Alice",
-    "lastname": "Smith",
-    "phone": "555-1234"
+  "firstname": "Alice",
+  "lastname": "Smith",
+  "phone": "555-1234"
 }
 ```
 
@@ -116,4 +117,4 @@ Upon success, you will receive a `202 Accepted` status code along with the detai
 - If required fields are missing, the API responds with a `400 Bad Request`.
 - For server errors, you will receive a `500 Internal Server Error`.
 
-##### Change Log 
+##### Change Log
